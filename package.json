@@ -1,0 +1,74 @@
+{
+  "name": "number-abbreviate",
+  "version": "0.0.1",
+  "description": "Abbreviate number to a more human-friendly format (3.6K, 6.8M, etc.)",
+  "main": "./lib/index.js",
+  "keywords": [
+    "number"
+  ],
+  "author": {
+    "name": "bubkoo",
+    "email": "bubkoo.wy@gmail.com"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/bubkoo/number-abbreviate#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bubkoo/number-abbreviate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bubkoo/number-abbreviate/issues"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-istanbul": "^4.1.4",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "coveralls": "^2.13.1",
+    "cross-env": "^5.0.5",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "husky": "^0.14.3",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "rimraf": "^2.6.1"
+  },
+  "files": [
+    "lib",
+    "dist",
+    "src"
+  ],
+  "nyc": {
+    "include": [
+      "src/**/*.js"
+    ],
+    "reporter": [
+      "html",
+      "text"
+    ],
+    "require": [
+      "babel-register"
+    ],
+    "report-dir": "./test/coverage",
+    "sourceMap": false,
+    "instrument": false
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test nyc mocha ./test/index.js",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint --ext .js,.jsx src",
+    "build": "rimraf lib && babel src --out-dir lib",
+    "prebuild": "npm run lint",
+    "prepublish": "npm run build",
+    "precommit": "npm run lint"
+  }
+}
