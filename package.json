@@ -4,7 +4,13 @@
   "description": "Abbreviate number to a more human-friendly format (3.6K, 6.8M, etc.)",
   "main": "./lib/index.js",
   "keywords": [
-    "number"
+    "number",
+    "abbreviate",
+    "abbr",
+    "format",
+    "round",
+    "commatize",
+    "units"
   ],
   "author": {
     "name": "bubkoo",
