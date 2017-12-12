@@ -1,5 +1,5 @@
 {
-  "name": "number-abbreviate",
+  "name": "numabbr",
   "version": "0.0.1",
   "description": "Abbreviate number to a more human-friendly format (3.6K, 6.8M, etc.)",
   "main": "./lib/index.js",
