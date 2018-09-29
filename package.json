@@ -50,7 +50,7 @@
     "pretest": "rimraf ./test/coverage",
     "test": "jest",
     "coveralls": "cat ./test/coverage/lcov.info | coveralls",
-    "prepublish": "npm test",
+    "prepare": "npm test",
     "build": "rimraf lib && tsc",
     "prebuild": "npm run lint",
     "precommit": "npm run lint"
