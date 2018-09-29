@@ -62,10 +62,10 @@ abbr.abbreviate(123456) // => 1.23十万
 
 ## Options
 
-- **precision** {Number} Default `2`. Specify the precision of decimal part
-- **commatize** {Object|Boolean} Default `false`. Specify how to commatize the result
-  - **division** {Number} Default `3`. Length of each divided parts
-  - **separator** {Char} Default `,`. Separator of each divided parts
+- **precision** { Number } Default `2`. Specify the precision of decimal part
+- **commatize** { Object | Boolean } Default `false`. Specify how to commatize the result
+  - **division** { Number } Default `3`. Length of each divided parts
+  - **separator** { Char } Default `,`. Separator of each divided parts
 
 ## Contributing
 

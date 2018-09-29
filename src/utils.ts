@@ -1,9 +1,11 @@
-export function round(num, precision) {
+import { CommatizeOptions } from './index'
+
+export function round(num: number, precision: number = 0): number {
   const pow = 10 ** (precision >= 0 ? precision : 0)
   return Math.round(num * pow) / pow
 }
 
-export function commatize(num, options = {}) {
+export function commatize(num: number | string, options: CommatizeOptions = {}) {
   const {
     division = 3,
     separator = ',',
