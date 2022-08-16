@@ -1,23 +1,6 @@
 {
-  "compilerOptions": {
-    "declaration": true,
-    "noImplicitAny": true,
-    "noEmitOnError": true,
-    "noUnusedLocals": true,
-    "strictNullChecks": true,
-    "esModuleInterop": true,
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "target": "es5",
-    "outDir": "./lib",
-    "lib": [
-      "es5"
-    ],
-    "types": [
-      "jest"
-    ]
-  },
+ "extends": "@bubkoo/tsconfig",
   "include": [
     "src/**/*.ts"
-  ]
+ ]
 }

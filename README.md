@@ -1,19 +1,25 @@
-# numabbr
+<h1 align="center">Abbreviate Number</h1>
 
-> Abbreviate number to a more human-friendly format (3.6K, 6.8M, etc.)
+<p align="center"><strong>Abbreviate number to a more human-friendly format (3.6K, 6.8M, etc.)</strong></p>
 
-[![MIT License](https://img.shields.io/badge/license-MIT_License-green.svg?style=flat-square)](https://github.com/bubkoo/number-abbreviate/blob/master/LICENSE)
+<p align="center">
+<a href="/LICENSE"><img src="https://img.shields.io/github/license/bubkoo/number-abbreviate?style=flat-square" alt="MIT License"></a>
+<a href="https://www.typescriptlang.org"><img alt="Language" src="https://img.shields.io/badge/language-TypeScript-blue.svg?style=flat-square"></a>
+<a href="https://github.com/bubkoo/number-abbreviate/pulls"><img alt="PRs Welcome" src="https://img.shields.io/badge/PRs-Welcome-brightgreen.svg?style=flat-square"></a>
+</p>
 
-[![NPM Version](https://img.shields.io/npm/v/numabbr.svg?style=flat-square)](https://www.npmjs.com/package/numabbr)
-[![Build Status](https://img.shields.io/travis/bubkoo/number-abbreviate.svg?style=flat)](https://travis-ci.org/bubkoo/number-abbreviate)
-[![Coverage Status](https://img.shields.io/coveralls/bubkoo/number-abbreviate.svg?style=flat)](https://coveralls.io/r/bubkoo/number-abbreviate)
-[![NPM downloads](http://img.shields.io/npm/dm/numabbr.svg?style=flat)](https://npmjs.org/package/numabbr)
-[![Package Quality](http://npm.packagequality.com/shield/numabbr.svg)](http://packagequality.com/#?package=numabbr)
+<p align="center">
+<a href="https://github.com/bubkoo/number-abbreviate/actions/workflows/ci.yml"><img alt="build" src="https://img.shields.io/github/workflow/status/bubkoo/number-abbreviate/%F0%9F%91%B7%E3%80%80CI/master?logo=github&style=flat-square"></a>
+<a href="https://app.codecov.io/gh/bubkoo/number-abbreviate"><img alt="coverage" src="https://img.shields.io/codecov/c/gh/bubkoo/number-abbreviate?logo=codecov&style=flat-square&token=BWweeU2uNX"></a>
+<a href="https://lgtm.com/projects/g/bubkoo/number-abbreviate/context:javascript" rel="nofollow"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/bubkoo/number-abbreviate.svg?logo=lgtm&style=flat-square" /></a>
+<a href="https://www.npmjs.com/package/numabbr" rel="nofollow"><img alt="NPM Package" src="https://img.shields.io/npm/v/numabbr.svg?style=flat-square" /></a>
+<a href="https://www.npmjs.com/package/numabbr" rel="nofollow"><img alt="NPM Downloads" src="http://img.shields.io/npm/dm/numabbr.svg?style=flat-square" /></a>
+</p>
 
 ## Install
 
 ```
-npm install --save numabbr
+npm install numabbr --save
 ```
 
 ## Usage
@@ -72,3 +78,9 @@ abbr.abbreviate(123456) // => 1.23十万
 Pull requests and stars are highly welcome.
 
 For bugs and feature requests, please [create an issue](https://github.com/bubkoo/number-abbreviate/issues/new).
+
+
+## License
+
+The scripts and documentation in this project are released under the [MIT License](LICENSE)
+s

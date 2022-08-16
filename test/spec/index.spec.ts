@@ -27,10 +27,12 @@ describe('Simple/shorthand mode: with default units', () => {
   })
 
   it('Should format number with commatize options', () => {
-    expect(numabbr(123456, {
-      precision: 1,
-      commatize: { division: 2 },
-    })).toBe('1,23.5K')
+    expect(
+      numabbr(123456, {
+        precision: 1,
+        commatize: { division: 2 },
+      }),
+    ).toBe('1,23.5K')
   })
 })
 

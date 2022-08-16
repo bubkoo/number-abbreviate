@@ -2,28 +2,28 @@ import { round, commatize } from './utils'
 
 export type UnitsType = { [key: string]: number }
 
-export type UnitItem = { unit: string, value: number }
+export type UnitItem = { unit: string; value: number }
 
 export type CommatizeOptions = {
   /**
    * Length of each divided parts. Default `3`.
-  */
-  division?: number,
+   */
+  division?: number
   /**
    * Separator of each divided parts. Default `,`.
-  */
-  separator?: string,
+   */
+  separator?: string
 }
 
 export type AbbreviateOptions = {
   /**
    * Specify the precision of decimal part.
-  */
-  precision?: number,
+   */
+  precision?: number
   /**
    * Specify how to commatize the result.
-  */
-  commatize?: boolean | CommatizeOptions,
+   */
+  commatize?: boolean | CommatizeOptions
 }
 
 export class NumberAbbreviate {
@@ -31,15 +31,12 @@ export class NumberAbbreviate {
 
   constructor(units: UnitsType = {}) {
     this.units = Object.keys(units)
-      .map(unit => ({ unit, value: units[unit] }))
+      .map((unit) => ({ unit, value: units[unit] }))
       .sort((a, b) => a.value - b.value)
   }
 
   abbreviate(num: number, options: AbbreviateOptions = {}) {
-    const {
-      precision = 2,
-      commatize: commaOptions,
-    } = options
+    const { precision = 2, commatize: commaOptions } = options
 
     const negative = num < 0
     const raw = Math.abs(num)
@@ -49,9 +46,13 @@ export class NumberAbbreviate {
       const size = this.units[i].value
       if (raw >= size) {
         const result = round(raw / size, precision)
-        return (negative ? '-' : '')
-          + (commaOptions ? commatize(result, commaOptions as CommatizeOptions) : result)
-          + unit
+        return (
+          (negative ? '-' : '') +
+          (commaOptions
+            ? commatize(result, commaOptions as CommatizeOptions)
+            : result) +
+          unit
+        )
       }
     }
 

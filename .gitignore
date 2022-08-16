@@ -1,7 +1,13 @@
 .DS_Store
 .idea
 .vscode
+.nyc_output
+.DS_Store
+.vscode
 npm-debug.log
+yarn-error.log
 node_modules
-/lib
-/test/coverage
+dist
+es
+lib
+test/coverage
