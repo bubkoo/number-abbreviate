@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/bubkoo/number-abbreviate/actions/workflows/ci.yml"><img alt="build" src="https://img.shields.io/github/workflow/status/bubkoo/number-abbreviate/%F0%9F%91%B7%E3%80%80CI/master?logo=github&style=flat-square"></a>
+<a href="https://github.com/bubkoo/number-abbreviate/actions/workflows/ci.yml"><img alt="build" src="https://img.shields.io/github/actions/workflow/status/bubkoo/number-abbreviate/ci.yml?branch=master&logo=github&style=flat-square"></a>
 <a href="https://app.codecov.io/gh/bubkoo/number-abbreviate"><img alt="coverage" src="https://img.shields.io/codecov/c/gh/bubkoo/number-abbreviate?logo=codecov&style=flat-square&token=BWweeU2uNX"></a>
 <a href="https://lgtm.com/projects/g/bubkoo/number-abbreviate/context:javascript" rel="nofollow"><img alt="Language grade: JavaScript" src="https://img.shields.io/lgtm/grade/javascript/g/bubkoo/number-abbreviate.svg?logo=lgtm&style=flat-square" /></a>
 <a href="https://www.npmjs.com/package/numabbr" rel="nofollow"><img alt="NPM Package" src="https://img.shields.io/npm/v/numabbr.svg?style=flat-square" /></a>
